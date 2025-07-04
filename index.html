@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ly Hor - Portfolio</title>
+    
+    <!-- CSS Files - CHECK THESE PATHS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/experience.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="en">Ly Hor</span>
+                <span class="zh hidden">李河</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">
+                    <span class="en">Home</span>
+                    <span class="zh hidden">首页</span>
+                </a></li>
+                <li><a href="#about">
+                    <span class="en">About</span>
+                    <span class="zh hidden">关于</span>
+                </a></li>
+                <li><a href="#skills">
+                    <span class="en">Skills</span>
+                    <span class="zh hidden">技能</span>
+                </a></li>
+                <li><a href="#experience">
+                    <span class="en">Experience</span>
+                    <span class="zh hidden">经验</span>
+                </a></li>
+                <li><a href="#projects">
+                    <span class="en">Projects</span>
+                    <span class="zh hidden">项目</span>
+                </a></li>
+                <li><a href="#contact">
+                    <span class="en">Contact</span>
+                    <span class="zh hidden">联系</span>
+                </a></li>
+            </ul>
+            <div class="controls">
+                <button class="theme-toggle" id="themeToggle" title="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="lang-toggle" id="langToggle">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>
+                    <span class="en">Ly Hor</span>
+                    <span class="zh hidden">李河</span>
+                </h1>
+                <p class="subtitle">
+                    <span class="en">Data Science Student</span>
+                    <span class="zh hidden">数据科学学生</span>
+                </p>
+                <p class="description">
+                    <span class="en">I am a fourth year student majoring in Data Science and Engineering. Passionate about leveraging data to solve real-world problems and create meaningful insights that drive decision-making.</span>
+                    <span class="zh hidden">我是一名数据科学与工程专业的四年级学生。热衷于利用数据解决现实世界的问题，创造有意义的洞察来推动决策制定。</span>
+                </p>
+                <a href="#contact" class="cta-button">
+                    <span class="en">Get In Touch</span>
+                    <span class="zh hidden">联系我</span>
+                </a>
+                <a href="#resume" class="cta-button">
+                    <span class="en">resume</span>
+                    <span class="zh hidden">个人简介</span>
+                </a>
+            </div>
+            <div class="hero-photo"><img src="./me.png" alt="Ly Hor"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <div class="section-white">
+        <section id="about" class="section">
+            <h2 class="fade-in">
+                <span class="en">About</span>
+                <span class="zh hidden">关于</span>
+            </h2>
+            <div class="about-content fade-in">
+                <div class="about-text">
+                    <h3>
+                        <span class="en">Professional Background</span>
+                        <span class="zh hidden">专业背景</span>
+                    </h3>
+                    <p>
+                        <span class="en">I am a fourth year student majoring in Data Science and Engineering. Passionate about leveraging data to solve real-world problems and create meaningful insights that drive decision-making.</span>
+                        <span class="zh hidden">我是一名数据科学与工程专业的四年级学生。热衷于利用数据解决现实世界的问题，创造有意义的洞察来推动决策制定。</span>
+                    </p>
+                    <p>
+                        <span class="en">Throughout my academic journey, I have completed several development projects and data analytics projects, gaining hands-on experience in machine learning, web development, and data visualization. I'm constantly learning new technologies and methodologies to stay current in this rapidly evolving field.</span>
+                        <span class="zh hidden">在我的学术旅程中，我完成了几个开发项目和数据分析项目，在机器学习、网络开发和数据可视化方面获得了实践经验。我不断学习新技术和方法论，以跟上这个快速发展的领域。</span>
+                    </p>
+                    
+                    <div class="credentials">
+                        <!-- Education (non-clickable) -->
+                        <div class="credential-item education">
+                            <div class="credential-header">
+                                <h4>
+                                    <i class="fas fa-graduation-cap credential-icon"></i>
+                                    <span class="en">Education</span>
+                                    <span class="zh hidden">教育</span>
+                                </h4>
+                            </div>
+                            <div class="education-content">
+                                <span class="en">Bachelor's of Data Science and Engineering<br>Royal University of Phnom Penh</span>
+                                <span class="zh hidden">数据科学与工程学士<br>金边皇家大学</span>
+                            </div>
+                        </div>
+
+                        <!-- Certifications (clickable) -->
+                        <div class="credential-item clickable" id="certifications">
+                            <div class="credential-header">
+                                <h4>
+                                    <i class="fas fa-certificate credential-icon"></i>
+                                    <span class="en">Certifications</span>
+                                    <span class="zh hidden">认证</span>
+                                </h4>
+                                <i class="fas fa-chevron-down dropdown-icon"></i>
+                            </div>
+                            <div class="credential-content">
+                                <div class="credential-details">
+                                    <div class="detail-item">
+                                        <div class="detail-title">
+                                            <span class="en">Udemy Web-development bootcamp course</span>
+                                            <span class="zh hidden">Udemy 网站开发课程</span>
+                                        </div>
+                                        <div class="detail-description">
+                                            <span class="en">Full-stack Web-development course</span>
+                                            <span class="zh hidden">全栈网站开发课程</span>
+                                        </div>
+                                        <div class="certification-badge">
+                                            <i class="fas fa-award"></i>
+                                            <span class="en">View certification</span>
+                                            <span class="zh hidden">雅思备考课程</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="detail-item">
+                                        <div class="detail-title">
+                                            <span class="en">Machine Learning Foundation</span>
+                                            <span class="zh hidden">机器学习基础</span>
+                                        </div>
+                                        <div class="detail-description">
+                                            <span class="en">AWS course</span>
+                                            <span class="zh hidden">AWS 机器学习课程</span>
+                                        </div>
+                                        <div class="certification-badge">
+                                            <i class="fas fa-university"></i>
+                                            <span class="en">View certification</span>
+                                            <span class="zh hidden">学术证书</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="detail-item">
+                                        <div class="detail-title">
+                                            <span class="en">IELTS preparation course</span>
+                                            <span class="zh hidden">雅思备考课程</span>
+                                        </div>
+                                        <div class="detail-description">
+                                            <span class="en">proof of english proficiency</span>
+                                            <span class="zh hidden">
+英语水平证明</span>
+                                        </div>
+                                        <div class="certification-badge">
+                                            <i class="fas fa-code"></i>
+                                            <span class="en">View certification</span>
+                                            <span class="zh hidden">训练营毕业生</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Languages (clickable) -->
+                        <div class="credential-item clickable" id="languages">
+                            <div class="credential-header">
+                                <h4>
+                                    <i class="fas fa-globe credential-icon"></i>
+                                    <span class="en">Languages</span>
+                                    <span class="zh hidden">语言</span>
+                                </h4>
+                                <i class="fas fa-chevron-down dropdown-icon"></i>
+                            </div>
+                            <div class="credential-content">
+                                <div class="credential-details">
+                                    <div class="detail-item">
+                                        <div class="detail-title">
+                                            <span class="en">Khmer (ភាសាខ្មែរ)</span>
+                                            <span class="zh hidden">高棉语</span>
+                                        </div>
+                                        <div class="detail-description">
+                                            <span class="en">Native speaker - Perfect fluency in speaking, reading, and writing</span>
+                                            <span class="zh hidden">母语 - 听说读写完全流利</span>
+                                        </div>
+                                        <div class="language-level">
+                                            <span class="en">Native</span>
+                                            <span class="zh hidden">母语</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 100%;"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="detail-item">
+                                        <div class="detail-title">
+                                            <span class="en">English</span>
+                                            <span class="zh hidden">英语</span>
+                                        </div>
+                                        <div class="detail-description">
+                                            <span class="en">General english program course, familiar in technical communication, presentations, and academic writing</span>
+                                            <span class="zh hidden">通用英语课程，熟悉技术交流、演讲和学术写作</span>
+                                        </div>
+                                        <div class="language-level">
+                                            <span class="en">General</span>
+                                            <span class="zh hidden">中级</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 90%;"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="detail-item">
+                                        <div class="detail-title">
+                                            <span class="en">Chinese (中文)</span>
+                                            <span class="zh hidden">中文</span>
+                                        </div>
+                                        <div class="detail-description">
+                                            <span class="en">Conversational level - Can handle daily conversations and basic business communications</span>
+                                            <span class="zh hidden">会话水平 - 能够处理日常对话和基本商务交流</span>
+                                        </div>
+                                        <div class="language-level">
+                                            <span class="en">Intermediate</span>
+                                            <span class="zh hidden">中级</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 65%;"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="detail-item">
+                                        <div class="detail-title">
+                                            <span class="en">Thai</span>
+                                            <span class="zh hidden">泰语</span>
+                                        </div>
+                                        <div class="detail-description">
+                                            <span class="en">Basic level - Currently learning, can understand simple phrases and basic communication</span>
+                                            <span class="zh hidden">基础水平 - 正在学习中，能理解简单短语和基本交流</span>
+                                        </div>
+                                        <div class="language-level">
+                                            <span class="en">Beginner</span>
+                                            <span class="zh hidden">初级</span>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div class="progress-fill" style="width: 30%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Skills Section -->
+     <div class="skills-category">
+                <h3>
+                    <span class="en">Frameworks & Libraries</span>
+                    <span class="zh hidden">框架与库</span>
+                </h3>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <div class="skill-icon react">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 9.861A2.139 2.139 0 1 0 12 14.139 2.139 2.139 0 1 0 12 9.861zM6.008 16.255l-.472-.12C2.018 15.246 0 13.737 0 11.996s2.018-3.25 5.536-4.139l.472-.119.133.468a23.53 23.53 0 0 0 1.363 3.578l.101.213-.101.213a23.307 23.307 0 0 0-1.363 3.578l-.133.467zM5.317 8.95c-2.674.751-4.315 1.9-4.315 3.046 0 1.145 1.641 2.294 4.315 3.046a24.95 24.95 0 0 1 1.182-3.046A24.752 24.752 0 0 1 5.317 8.95zM17.992 16.255l-.133-.469a23.357 23.357 0 0 0-1.364-3.577l-.101-.213.101-.213a23.42 23.42 0 0 0 1.364-3.578l.133-.468.473.119c3.517.889 5.535 2.398 5.535 4.14s-2.018 3.25-5.535 4.139l-.473.12zm-.491-4.259c.48 1.039.877 2.06 1.182 3.046 2.675-.752 4.315-1.901 4.315-3.046 0-1.146-1.641-2.294-4.315-3.046a24.788 24.788 0 0 1-1.182 3.046z"/>
+                            </svg>
+                        </div>
+                        <div class="skill-name">React</div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-icon nodejs">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M11.998,24c-0.321,0-0.641-0.084-0.922-0.247l-2.936-1.737c-0.438-0.245-0.224-0.332-0.08-0.383 c0.585-0.203,0.703-0.25,1.328-0.604c0.065-0.037,0.151-0.023,0.218,0.017l2.256,1.339c0.082,0.045,0.197,0.045,0.272,0l8.795-5.076 c0.082-0.047,0.134-0.141,0.134-0.238V6.921c0-0.099-0.053-0.192-0.137-0.242l-8.791-5.072c-0.081-0.047-0.189-0.047-0.271,0 L2.46,6.68C2.376,6.729,2.324,6.825,2.324,6.921v10.15c0,0.097,0.053,0.189,0.139,0.235l2.409,1.392 c1.307,0.654,2.108-0.116,2.108-0.89V7.787c0-0.142,0.114-0.253,0.256-0.253h1.115c0.139,0,0.255,0.112,0.255,0.253v10.021 c0,1.745-0.95,2.745-2.604,2.745c-0.508,0-0.909,0-2.026-0.551L2.28,18.675c-0.57-0.329-0.922-0.945-0.922-1.604V6.921 c0-0.659,0.353-1.275,0.922-1.603l8.795-5.082c0.557-0.315,1.296-0.315,1.848,0l8.794,5.082c0.57,0.329,0.924,0.944,0.924,1.603 v10.15c0,0.659-0.354,1.273-0.924,1.604l-8.794,5.078C12.643,23.916,12.324,24,11.998,24z"/>
+                            </svg>
+                        </div>
+                        <div class="skill-name">Node.js</div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-icon express">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M24 18.588a1.529 1.529 0 01-1.895-.72l-3.45-4.771-.5-.667-4.003 5.444a1.466 1.466 0 01-1.802.708l5.158-6.92-4.798-6.251a1.595 1.595 0 011.9.666l3.576 4.83 3.596-4.81a1.435 1.435 0 011.788-.668L21.708 7.9l-2.522 3.283a.666.666 0 000 .994l4.804 6.412zM.002 11.576l.42-2.075c1.154-4.103 5.858-5.81 9.094-3.27 1.895 1.489 2.368 3.597 2.275 5.973H1.116C.943 16.447 4.005 19.009 7.92 17.7a4.078 4.078 0 002.582-2.876c.207-.666.548-.78 1.174-.588a5.417 5.417 0 01-2.589 3.957c-2.864 1.607-6.509.018-7.978-2.442a6.602 6.602 0 01-1.107-4.175zm3.693-2.61h6.271c-.026-1.485-1.17-3.01-3.2-2.996-1.988-.007-3.026 1.55-3.071 2.996z"/>
+                            </svg>
+                        </div>
+                        <div class="skill-name">Express</div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-icon bootstrap">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M11.77 11.24H9.956V8.202h2.152c1.17 0 1.834.522 1.834 1.466 0 1.008-.773 1.572-2.174 1.572zm.324 1.206H9.956v3.584h2.152c1.455 0 2.174-.617 2.174-1.726 0-.957-.736-1.858-2.174-1.858zM24 12c0 6.627-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0s12 5.373 12 12zM6.518 7.2h5.954c2.174 0 3.802 1.15 3.802 3.05 0 1.303-.826 2.174-1.896 2.522 1.402.348 2.304 1.402 2.304 2.783 0 2.087-1.658 3.445-4.108 3.445H6.518V7.2z"/>
+                            </svg>
+                        </div>
+                        <div class="skill-name">Bootstrap</div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-icon spring">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M21.8537 1.4158a10.4504 10.4504 0 0 1-1.284 2.2471A11.9666 11.9666 0 1 0 3.8518 20.7757l.4445-.3951a9.9543 9.9543 0 0 0 16.9438-7.2637c.4793-1.8285.2869-3.6334-.2183-5.2857-.2393-.7842-.5672-1.5284-.9505-2.2382C21.0787 2.9017 21.8537 1.4158 21.8537 1.4158zM11.7893 20.029a8.5154 8.5154 0 1 1 8.5154-8.5154c-.0071 4.7048-3.8106 8.5083-8.5154 8.5154z"/>
+                            </svg>
+                        </div>
+                        <div class="skill-name">Spring Boot</div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-icon angular">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 2.5L3.5 6.5l1.25 10.5L12 21.5l7.25-4.5L20.5 6.5L12 2.5zm0 2.71l5.6 2.15-.85 6.89L12 16.79l-4.75-2.54-.85-6.89L12 5.21z"/>
+                            </svg>
+                        </div>
+                        <div class="skill-name">Angular</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3>
+                    <span class="en">Data Science Tools & Libraries</span>
+                    <span class="zh hidden">数据科学工具与库</span>
+                </h3>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <div class="skill-icon python">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98l-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09-.33.22zM21.1 6.11l.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25l-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08-.33.23z"/>
+                            </svg>
+                        </div>
+                        <div class="skill-name">Python</div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-icon jupyter">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M7.157 22.201A1.784 1.799 0 0 1 5.374 20.4a1.784 1.799 0 0 1 1.783-1.8 1.784 1.799 0 0 1 1.783 1.8 1.784 1.799 0 0 1-1.783 1.801zM20.582 1.427a1.415 1.427 0 0 1-1.414 1.428 1.415 1.427 0 0 1-1.415-1.428A1.415 1.427 0 0 1 19.168 0a1.415 1.427 0 0 1 1.414 1.427zM16.19 1.427a1.415 1.427 0 0 1-1.414 1.428 1.415 1.427 0 0 1-1.414-1.428A1.415 1.427 0 0 1 14.776 0a1.415 1.427 0 0 1 1.414 1.427zM11.798 1.427a1.415 1.427 0 0 1-1.414 1.428 1.415 1.427 0 0 1-1.415-1.428A1.415 1.427 0 0 1 10.384 0a1.415 1.427 0 0 1 1.414 1.427zM7.405 1.427A1.415 1.427 0 0 1 5.991 2.855 1.415 1.427 0 0 1 4.577 1.427 1.415 1.427 0 0 1 5.991 0a1.415 1.427 0 0 1 1.414 1.427z"/>
+                            </svg>
+                        </div>
+                        <div class="skill-name">Jupyter</div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-icon pandas">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M16.922 0h2.623v18.104h-2.623zm-7.53 18.104h2.623V7.2H9.392zm0-18.104h2.623v4.8H9.392z"/>
+                            </svg>
+                        </div>
+                        <div class="skill-name">Pandas</div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-icon numpy">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M10.315 4.392l4.315 7.172 4.316-7.172zm1.62 6.295l2.695-4.48L17.334 10.687H11.936zm5.28 1.38l-1.644 2.737 1.644 2.737 1.643-2.737-1.644-2.737zM4.365 14.789L1.96 17.194 4.365 19.6l2.404-2.405-2.404-2.406zm14.31-5.536L16.272 6.847 13.867 9.252l2.405 2.405 2.404-2.405zm-7.172 1.043l-1.734 1.734 1.734 1.733 1.734-1.733-1.734-1.734z"/>
+                            </svg>
+                        </div>
+                        <div class="skill-name">NumPy</div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-icon sklearn">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12.017 24C5.396 24 .001 18.605.001 11.984S5.396-.032 12.017-.032s12.016 5.395 12.016 12.016S18.638 24 12.017 24zM6.624 17.089l1.351-1.351c.759.759 1.784 1.181 2.86 1.181s2.101-.422 2.86-1.181l1.351 1.351c-1.149 1.149-2.684 1.783-4.211 1.783s-3.062-.634-4.211-1.783zm8.422-8.422l-1.351 1.351c-.759-.759-1.784-1.181-2.86-1.181s-2.101.422-2.86 1.181L6.624 8.667c1.149-1.149 2.684-1.783 4.211-1.783s3.062.634 4.211 1.783z"/>
+                            </svg>
+                        </div>
+                        <div class="skill-name">Scikit-learn</div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-icon powerbi">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12.5 2.4v19.2h-1V2.4h1zm2.7 1.8v15.6h-1V4.2h1zm2.7 1.8v12h-1V6h1zm2.7 1.8v8.4h-1V7.8h1zm2.4 1.8v4.8h-1V9.6h1z"/>
+                            </svg>
+                        </div>
+                        <div class="skill-name">Power BI</div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-icon matplotlib">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 0C5.371 0 0 5.371 0 12s5.371 12 12 12 12-5.371 12-12S18.629 0 12 0zm-1.764 3.462c.457 0 .828.371.828.828v15.42c0 .457-.371.828-.828.828s-.828-.371-.828-.828V4.29c0-.457.371-.828.828-.828zm3.528 2.478c.457 0 .828.371.828.828v10.464c0 .457-.371.828-.828.828s-.828-.371-.828-.828V6.768c0-.457.371-.828.828-.828zm3.528 2.478c.457 0 .828.371.828.828v5.508c0 .457-.371.828-.828.828s-.828-.371-.828-.828V9.246c0-.457.371-.828.828-.828z"/>
+                            </svg>
+                        </div>
+                        <div class="skill-name">Matplotlib</div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-icon xgboost">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 0l11 6.5v11L12 24 1 17.5v-11L12 0zm0 2.31L3 7.19v9.62l9 5.88 9-5.88V7.19L12 2.31zm4.5 6.69L12 13.5 7.5 9l4.5 4.5L16.5 9z"/>
+                            </svg>
+                        </div>
+                        <div class="skill-name">XGBoost</div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-icon randomforest">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <div class="skill-name">Random Forest</div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-icon anomaly">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 15c-.552 0-1-.448-1-1s.448-1 1-1 1 .448 1 1-.448 1-1 1zm1-3h-2V7h2v7z"/>
+                            </svg>
+                        </div>
+                        <div class="skill-name">Anomaly Detection</div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-icon colab">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M16.942 4.553c-1.372 0-2.494 1.122-2.494 2.494s1.122 2.494 2.494 2.494 2.494-1.122 2.494-2.494-1.122-2.494-2.494-2.494zm-9.884 0c-1.372 0-2.494 1.122-2.494 2.494s1.122 2.494 2.494 2.494 2.494-1.122 2.494-2.494-1.122-2.494-2.494-2.494zM12 1.5c5.799 0 10.5 4.701 10.5 10.5S17.799 22.5 12 22.5 1.5 17.799 1.5 12 6.201 1.5 12 1.5z"/>
+                            </svg>
+                        </div>
+                        <div class="skill-name">Google Colab</div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-icon excel">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M6.5 2.5h11v19h-11v-19zm5.5 9.5l-2.5-3h2l1.25 1.5L14 9h2l-2.5 3L16 15h-2l-1.25-1.5L11.5 15h-2l2.5-3z"/>
+                            </svg>
+                        </div>
+                        <div class="skill-name">Excel</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3>
+                    <span class="en">Web Development</span>
+                    <span class="zh hidden">网站开发</span>
+                </h3>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <div class="skill-icon javascript">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/>
+                            </svg>
+                        </div>
+                        <div class="skill-name">JavaScript</div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-icon css">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/>
+                            </svg>
+                        </div>
+                        <div class="skill-name">CSS</div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-icon html">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/>
+                            </svg>
+                        </div>
+                        <div class="skill-name">HTML</div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-icon sql">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <div class="skill-name">SQL</div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-icon postgresql">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12.001 2.02c-5.509 0-9.975 4.448-9.975 9.932 0 4.403 2.865 8.13 6.839 9.458.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 11.952C22 6.484 17.522 2.02 12.001 2.02z"/>
+                            </svg>
+                        </div>
+                        <div class="skill-name">PostgreSQL</div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-icon git">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.6-.401-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0L23.546 13.119c.603-.603.603-1.582 0-2.188"/>
+                            </svg>
+                        </div>
+                        <div class="skill-name">Git</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Experience Section -->
+    <div class="section-white">
+        <section id="experience" class="section">
+            <h2 class="fade-in">
+                <span class="en">Work Experience</span>
+                <span class="zh hidden">学术经验</span>
+            </h2>
+            <div class="experience-timeline fade-in">
+                <div class="experience-item">
+                    <h3>
+                        <span class="en">Chinese Translator</span>
+                        <span class="zh hidden">中柬翻译者</span>
+                    </h3>
+                    <div class="company">
+                        <span class="en">Elite Max Construction</span>
+                        <span class="zh hidden">Elite Max 建筑公司</span>
+                    </div>
+                    <div class="date">
+                        <span class="en">2020 - 2021</span>
+                        <span class="zh hidden">2020 - 2021</span>
+                    </div>
+                    <p>
+                        <span class="en">-Helped in communicating between Chinese manager and Khmer local staffs to improve workflow.</span>
+                        <span class="en">-Accompanied and assisted the boss when he is in need of interpretation.</span>
+                        <span class="zh hidden">帮助中国经理和高棉当地员工进行沟通，以改善工作流程。</span>
+                        <span class="zh hidden">在老板需要翻译时陪同并协助。</span>
+                    </p>
+                </div>
+            </div>
+            <div class="experience-timeline fade-in">
+                <div class="experience-item">
+                    <h3>
+                        <span class="en">Office assistant</span>
+                        <span class="zh hidden">办公室助理</span>
+                    </h3>
+                    <div class="company">
+                        <span class="en">Construction company</span>
+                        <span class="zh hidden">中国建筑公司</span>
+                    </div>
+                    <div class="date">
+                        <span class="en">2021 - 2022</span>
+                        <span class="zh hidden">2020 - 2021</span>
+                    </div>
+                    <p>
+                        <span class="en">-l staffs to improve workflow.</span>
+                        <span class="en">-Created filing systems that saved time and kept important paperwork well-organized and accessible.</span>
+                        <span class="zh hidden">组织和管理关键文件，以帮助主管快速轻松地访问信息。</span>
+                        <span class="zh hidden">创建归档系统，节省时间并使重要文件井然有序且易于访问。</span>
+                    </p>
+                </div>
+            </div>
+            <div class="experience-timeline fade-in">
+                <div class="experience-item">
+                    <h3>
+                        <span class="en">Chinese Teacher</span>
+                        <span class="zh hidden">中文教师</span>
+                    </h3>
+                    <div class="company">
+                        <span class="en">In-Home Chinese Tutor</span>
+                        <span class="zh hidden">上门中文家教</span>
+                    </div>
+                    <div class="date">
+                        <span class="en">2023 - present</span>
+                        <span class="zh hidden">2023 - 至今</span>
+                    </div>
+                    <p>
+                        <span class="en">-Provided one-on-one tutoring for young age student </span>
+                        <span class="en">-Developed comprehensive study plans to meet students’ learning styles and needs</span>
+                        <span class="zh hidden">为低龄学生提供一对一辅导</span>
+                        <span class="zh hidden">制定全面的学习计划以满足学生的学习风格和需求</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2 class="fade-in">
+            <span class="en">Selected Projects</span>
+            <span class="zh hidden">精选项目</span>
+        </h2>
+        <div class="projects-grid">
+            <div class="project-card fade-in">
+                <div class="project-header">
+                    <h3>
+                        <span class="en">Sales Prediction Model（RFM）</span>
+                        <span class="zh hidden">销售预测模型</span>
+                    </h3>
+                    <p>
+                        <span class="en">Using RFM (Recency, Frequency, Monetary) values as features to segment customers or predict future behavior (e.g., churn, conversion, lifetime value). Here's a full overview to help you understand and implement it.</span>
+                        <span class="zh hidden">基于历史数据、季节性趋势和市场指标，使用先进回归技术和时间序列分析的机器学习模型来预测未来销售。</span>
+                    </p>
+                </div>
+                <div class="project-footer">
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Matplotlib</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <span class="en">View Project</span>
+                            <span class="zh hidden">查看项目</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-header">
+                    <h3>
+                        <span class="en">Money Laundering Detection</span>
+                        <span class="zh hidden">洗钱检测机器学习项目</span>
+                    </h3>
+                    <p>
+                        <span class="en">To detect suspicious financial transactions potentially related to money laundering using machine learning techniques.</span>
+                        <span class="zh hidden">使用机器学习技术检测可能与洗钱有关的可疑金融交易。</span>
+                    </p>
+                </div>
+                <div class="project-footer">
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Matplotlib</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <span class="en">View Project</span>
+                            <span class="zh hidden">查看项目</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-header">
+                    <h3>
+                        <span class="en">Power BI Sales Dashboard</span>
+                        <span class="zh hidden">Power BI 销售仪表板</span>
+                    </h3>
+                    <p>
+                        <span class="en">Designed and developed an interactive sales analytics dashboard in Power BI to explore and visualize key business metrics. The dashboard provided insights into sales performance across time, products, and customer segments using dynamic filters and KPIs. Applied data modeling, DAX measures, and visual storytelling techniques to support data-driven decision-making.</span>
+                        <span class="zh hidden">在 Power BI 中设计并开发了一个交互式销售分析仪表板，用于探索和可视化关键业务指标。该仪表板使用动态筛选器和 KPI，提供跨时间、产品和客户细分的销售业绩洞察。应用数据建模、DAX 度量和可视化叙事技术来支持数据驱动的决策。</span>
+                    </p>
+                </div>
+                <div class="project-footer">
+                    <div class="project-tech">
+                        <span class="tech-tag">Power BI</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <span class="en">View Project</span>
+                            <span class="zh hidden">查看项目</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <div class="section-white">
+        <section id="contact" class="section">
+            <h2 class="fade-in">
+                <span class="en">Contact</span>
+                <span class="zh hidden">联系</span>
+            </h2>
+            <div class="contact-content fade-in">
+                <p>
+                    <span class="en">I am always interested in discussing new opportunities, challenging projects, or potential collaborations. Please feel free to reach out through any of the following channels.</span>
+                    <span class="zh hidden">我总是乐于讨论新的机会、具有挑战性的项目或潜在的合作。请随时通过以下任何渠道与我联系。</span>
+                </p>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h4>Email</h4>
+                        <a href="mailto:lyhordse@gmail.com" class="contact-link">
+                            <div class="icon-container email-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">lyhordse@email.com</div>
+                        </a>
+                    </div>
+
+                    <div class="contact-item">
+                        <h4>Telegram</h4>
+                        <a href="https://t.me/layhor16899" class="contact-link">
+                            <div class="icon-container telegram-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">@layhor16899</div>
+                        </a>
+                    </div>
+
+                    <div class="contact-item">
+                        <h4>LinkedIn</h4>
+                        <a href="https://linkedin.com/in/lyhor" target="_blank" class="contact-link">
+                            <div class="icon-container linkedin-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">linkedin.com/in/lyhor</div>
+                        </a>
+                    </div>
+
+                    <div class="contact-item">
+                        <h4>GitHub</h4>
+                        <a href="https://github.com/layhor" target="_blank" class="contact-link">
+                            <div class="icon-container github-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-text">github.com/layhor</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <!-- Enhanced Footer -->
+<footer>
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <div class="footer-container">
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>
+                <span class="en" style="color: aliceblue;">&copy; 2025 Ly Hor. All Rights Reserved.</span>
+                <span class="zh hidden" style="color: aliceblue;">&copy; 2025 李河。保留所有权利。</span>
+            </p>
+            <p>
+                <span class="en" style="color: aliceblue;">Made with ❤️ and lots of ☕</span>
+                <span class="zh hidden" style="color: aliceblue;">用❤️和大量☕制作</span>
+            </p>
+        </div>
+    </div>
+</footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
